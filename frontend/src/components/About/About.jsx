@@ -106,60 +106,6 @@ function About() {
                     </ul>
                 </div>
             </div>
-            {/* Meet the Creators Section */}
-            <div className="w-full max-w-7xl mb-10">
-                <h2 className="text-4xl font-bold text-center text-violet-700 dark:text-violet-500 mb-8">
-                    Meet the Creators
-                </h2>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    {/* MERN Developers Section */}
-                    <div>
-                        <h3 className="text-3xl font-semibold text-purple-600 dark:text-purple-400 mb-6 text-center">
-                            MERN Contributors
-                        </h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                            {/* MERN Developer Cards */}
-                            {["Dev Ruhela", "Raj Verma", "Shubham Malik"].map((name) => (
-                                <div key={name} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 flex items-center gap-4 transform transition-transform duration-300 hover:scale-105">
-                                    <User className="w-16 h-16 text-purple-600 dark:text-purple-400" />
-                                    <div>
-                                        <h4 className="text-xl font-semibold text-gray-700 dark:text-gray-300">
-                                            {name}
-                                        </h4>
-                                        <p className="text-gray-500 dark:text-gray-400">
-                                            Contributed in MERN
-                                        </p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Python Developers Section */}
-                    <div>
-                        <h3 className="text-3xl font-semibold text-teal-600 dark:text-teal-400 mb-6 text-center">
-                            Python Contributors
-                        </h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                            {/* Python Developer Cards */}
-                            {["Aayush Kanjani", "Aryan Paul", "Harsh Deshmukh"].map((name) => (
-                                <div key={name} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 flex items-center gap-4 transform transition-transform duration-300 hover:scale-105">
-                                    <User className="w-16 h-16 text-teal-600 dark:text-teal-400" />
-                                    <div>
-                                        <h4 className="text-xl font-semibold text-gray-700 dark:text-gray-300">
-                                            {name}
-                                        </h4>
-                                        <p className="text-gray-500 dark:text-gray-400">
-                                            Contributed in Python
-                                        </p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 }
